@@ -42,7 +42,7 @@ while True:
                     misplaced_guesses.remove(c)
             elif c in word_to_guess:
                 if c not in misplaced_guesses:
-                    misplaced_guesses.ap0pend(c)
+                    misplaced_guesses.append(c)
                 print("_", end=" ")
             else:
                 if c not in incorrect_guesses:
@@ -78,3 +78,4 @@ while True:
         # To display the number of turns left
         print("You have", max_turns - turns_taken, "turns left.")
         
+
